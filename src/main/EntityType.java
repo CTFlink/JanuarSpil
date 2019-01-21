@@ -1,5 +1,5 @@
 package main;
 
-public enum EntityTypes {
+public enum EntityType {
     BALL, BIRD
 }
