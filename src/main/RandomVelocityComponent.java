@@ -1,4 +1,4 @@
-package main.java.com.almasb.dodger;
+package main;
 
 import com.almasb.fxgl.app.FXGL;
 import com.almasb.fxgl.core.math.FXGLMath;

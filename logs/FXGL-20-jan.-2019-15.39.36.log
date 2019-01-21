@@ -81,7 +81,7 @@ Exception occurred: java.lang.IllegalStateException : EntityFactory was not set!
 E: com.almasb.fxgl.entity.GameWorld.spawn(GameWorld.java:397)
 E: com.almasb.fxgl.entity.GameWorld.spawn(GameWorld.java:384)
 E: com.almasb.fxgl.app.DSLKt.spawn(DSL.kt:147)
-E: main.java.com.almasb.dodger.DodgerApp.initGame(DodgerApp.java:17)
+E: main.DodgerApp.initGame(DodgerApp.java:17)
 E: com.almasb.fxgl.app.LoadingState$InitAppTask.initGame(AppStates.kt:200)
 E: com.almasb.fxgl.app.LoadingState$InitAppTask.call(AppStates.kt:160)
 E: com.almasb.fxgl.app.LoadingState$InitAppTask.call(AppStates.kt:132)

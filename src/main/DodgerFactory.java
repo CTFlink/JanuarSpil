@@ -1,4 +1,4 @@
-package main.java.com.almasb.dodger;
+package main;
 
 import com.almasb.fxgl.entity.*;
 import com.almasb.fxgl.physics.PhysicsComponent;

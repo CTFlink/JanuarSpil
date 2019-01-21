@@ -1,4 +1,4 @@
-package main.java.com.almasb.dodger;
+package main;
 
 public enum EntityTypes {
     BALL, BIRD
