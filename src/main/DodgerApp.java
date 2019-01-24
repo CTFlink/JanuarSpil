@@ -7,6 +7,7 @@ import com.almasb.fxgl.physics.CollisionHandler;
 import com.almasb.fxgl.settings.GameSettings;
 import javafx.scene.input.KeyCode;
 import javafx.scene.paint.Color;
+import javafx.scene.text.Text;
 
 import java.awt.*;
 import java.util.Map;
@@ -50,10 +51,24 @@ public class DodgerApp extends GameApplication {
     @Override
     protected void initGameVars(Map<String, Object> vars) {
         vars.put("lives", 3);
+        vars.put("score", 0);
     }
 
     @Override
     protected void initGame() {
+
+        getGameState().<Integer>addListener("lives", (prev, now) -> {
+            if (now == 0) {
+                getDisplay().showConfirmationBox("Game Over. Continue?", yes -> {
+                    if (yes) {
+                        startNewGame();}
+                    else {
+                        exit();}
+                });
+            }
+        });
+
+        getGameScene().setBackgroundColor(Color.BLACK);
 
         getGameWorld().addEntityFactory(new DodgerFactory());
 
@@ -64,7 +79,7 @@ public class DodgerApp extends GameApplication {
 
         getGameWorld().addEntity(Entities.makeScreenBounds(40));
 
-        spawn("ball", getWidth() / 2, 30);
+        spawn("ball", getWidth()/2, 30);
 
         for (int i = 0; i < 4; i++) {
             double x = random(i * 150, i * 150 + 150);
@@ -81,15 +96,25 @@ public class DodgerApp extends GameApplication {
         getPhysicsWorld().addCollisionHandler(new CollisionHandler(EntityType.BIRD, EntityType.BALL) {
             @Override
             protected void onCollisionBegin(Entity bird, Entity ball) {
+                play("hit_wall.wav");
+
                 inc("lives", -1);
 
                 getGameWorld().getEntitiesCopy().forEach(Entity::removeFromWorld);
 
                 respawnEntities();
 
-                System.out.println(geti("lives"));
             }
         });
+    }
+
+    @Override
+    protected void initUI() {
+        Text textLives = addVarText(10, 20, "lives");
+        textLives.setFont(getUIFactory().newFont(26));
+
+        Text textScore = addVarText(750, 20, "score");
+        textScore.setFont(getUIFactory().newFont(26));
     }
 
     public static void main(String[] args) {
