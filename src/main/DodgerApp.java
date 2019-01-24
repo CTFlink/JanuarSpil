@@ -3,11 +3,17 @@ package main;
 import com.almasb.fxgl.app.GameApplication;
 import com.almasb.fxgl.entity.Entities;
 import com.almasb.fxgl.entity.Entity;
+import com.almasb.fxgl.entity.components.CollidableComponent;
+import com.almasb.fxgl.particle.ParticleComponent;
+import com.almasb.fxgl.particle.ParticleEmitter;
+import com.almasb.fxgl.particle.ParticleEmitters;
 import com.almasb.fxgl.physics.CollisionHandler;
+import com.almasb.fxgl.physics.PhysicsParticleComponent;
 import com.almasb.fxgl.settings.GameSettings;
 import javafx.scene.input.KeyCode;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
+import sun.font.TrueTypeFont;
 
 import java.awt.*;
 import java.util.Map;
@@ -77,7 +83,11 @@ public class DodgerApp extends GameApplication {
 
     private void respawnEntities(){
 
-        getGameWorld().addEntity(Entities.makeScreenBounds(40));
+        Entity bounds = Entities.makeScreenBounds(40);
+        bounds.setType(EntityType.SCREEN);
+        bounds.addComponent(new CollidableComponent(true));
+
+        getGameWorld().addEntity(bounds);
 
         spawn("ball", getWidth()/2, 30);
 
@@ -103,7 +113,19 @@ public class DodgerApp extends GameApplication {
                 getGameWorld().getEntitiesCopy().forEach(Entity::removeFromWorld);
 
                 respawnEntities();
+            }
+        });
 
+        getPhysicsWorld().addCollisionHandler(new CollisionHandler(EntityType.BALL, EntityType.SCREEN) {
+            @Override
+            protected void onCollisionBegin(Entity ball, Entity screen) {
+                ParticleEmitter emitter = ParticleEmitters.newExplosionEmitter(100);
+
+                Entity e = new Entity();
+                e.setPosition(ball.getCenter());
+                e.addComponent(new ParticleComponent(emitter));
+
+                getGameWorld().addEntity(e);
             }
         });
     }
