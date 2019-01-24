@@ -113,8 +113,13 @@ public class DodgerApp extends GameApplication {
         Text textLives = addVarText(10, 20, "lives");
         textLives.setFont(getUIFactory().newFont(26));
 
-        Text textScore = addVarText(750, 20, "score");
+        Text textScore = addVarText(700, 20, "score");
         textScore.setFont(getUIFactory().newFont(26));
+    }
+
+    @Override
+    protected void onUpdate(double tpf) {
+        inc("score", +1 );
     }
 
     public static void main(String[] args) {
