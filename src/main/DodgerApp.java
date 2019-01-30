@@ -99,6 +99,7 @@ public class DodgerApp extends GameApplication {
             }
         });
 
+
         getGameScene().setBackgroundColor(Color.BLACK);
 
         getGameWorld().addEntityFactory(new DodgerFactory());
