@@ -13,20 +13,33 @@ import com.almasb.fxgl.settings.GameSettings;
 import javafx.scene.input.KeyCode;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Text;
-import sun.font.TrueTypeFont;
 
 import java.awt.*;
 import java.util.Map;
 
+
+//static import gør det muligt at undgå at skrive DSLKT hver gang dens metoder bliver brugt.
 import static com.almasb.fxgl.app.DSLKt.*;
 
 
+
 public class DodgerApp extends GameApplication {
+
+    /**
+     * En typisk main method der starter programmet.
+     * @param args
+     */
+    public static void main(String[] args) {
+        launch(args);
+    }
 
     @Override
     protected void initSettings(GameSettings gameSettings) {
     }
 
+    /**
+     * Her angives der hvad der sker når brugeren trykker på tastaturtasterne  a,d,s,w
+     */
     @Override
     protected void initInput() {
         onKey(KeyCode.A, "Left", () -> {
@@ -43,6 +56,12 @@ public class DodgerApp extends GameApplication {
         });
     }
 
+    /**
+     * her bliver brugerens indtastede retning sat til at bevæge fuglene.
+     * Direction bliver forskudt for hver bird enhed vi har. Så venstre bliver til højre, højre bliver til ned osv.
+     * Dette gøres for at fulgene bliver svære at styre.
+     * @param direction
+     */
     private void move(Direction direction) {
 
         for (Entity bird : getGameWorld().getEntitiesByType(EntityType.BIRD)) {
@@ -54,11 +73,17 @@ public class DodgerApp extends GameApplication {
         }
     }
 
+    /**
+     * Liv sættes til 3 og score sættes til 0 hver eneste gang spillet startes.
+     * Dette gøre for at tælleren ikke bare fortsætter når brugeren genstarter spillet.
+     * @param vars
+     */
     @Override
     protected void initGameVars(Map<String, Object> vars) {
         vars.put("lives", 3);
         vars.put("score", 0);
     }
+
 
     @Override
     protected void initGame() {
@@ -99,6 +124,9 @@ public class DodgerApp extends GameApplication {
         }
     }
 
+    /**
+     * initPhysics metoden gør os i stand til at ændre på hvordan ting bevæger sig i forhold til hinanden.
+     */
     @Override
     protected void initPhysics() {
         getPhysicsWorld().setGravity(0,0);
@@ -130,6 +158,10 @@ public class DodgerApp extends GameApplication {
         });
     }
 
+    /*
+     * Her overskrives den måde UI'en ser ud på som default.
+     * Vi gør det her ved at tilføje en tekst (der består af tal) med antal liv og en med spillerens score
+     */
     @Override
     protected void initUI() {
         Text textLives = addVarText(10, 20, "lives");
@@ -142,9 +174,5 @@ public class DodgerApp extends GameApplication {
     @Override
     protected void onUpdate(double tpf) {
         inc("score", +1 );
-    }
-
-    public static void main(String[] args) {
-        launch(args);
     }
 }

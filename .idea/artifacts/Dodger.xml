@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="Dodger">
+    <output-path>$PROJECT_DIR$/out/artifacts/Dodger</output-path>
+    <root id="root">
+      <element id="library" level="project" name="fxgl-0.5.4-uber" />
+      <element id="archive" name="Dodger.jar">
+        <element id="module-output" name="JanuarSpil" />
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
