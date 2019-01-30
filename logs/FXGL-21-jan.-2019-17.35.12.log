@@ -1,0 +1,237 @@
+17:33:29.576 [JavaFX Application Thread] DEBUG GameApplication      - Logger initialized
+17:33:29.590 [JavaFX Application Thread] DEBUG GameApplication      - Logging settings
+Title: Untitled
+Version: 0.0
+Width: 800
+Height: 600
+Fullscreen: false
+Intro: false
+Menus: false
+Profiling: false
+Single step:false
+App Mode: DEVELOPER
+Menu Key: ESCAPE
+Stage Style: DECORATED
+Scene Factory: class com.almasb.fxgl.scene.SceneFactory
+Dialog Factory: class com.almasb.fxgl.ui.FXGLDialogFactory
+UI Factory: class com.almasb.fxgl.ui.FXGLUIFactory
+Notification Service: class com.almasb.fxgl.gameplay.notification.XboxNotificationView
+Exception Handler: class com.almasb.fxgl.app.FXGLExceptionHandler
+17:33:29.590 [JavaFX Application Thread] DEBUG GameApplication      - Starting FXGL
+17:33:29.598 [JavaFX Application Thread] INFO  FXGL                 - FXGL-0.5.4 on DESKTOP
+17:33:29.598 [JavaFX Application Thread] INFO  FXGL                 - Source code and latest versions at: https://github.com/AlmasB/FXGL
+17:33:29.598 [JavaFX Application Thread] INFO  FXGL                 -              Join the FXGL chat at: https://gitter.im/AlmasB/FXGL
+17:33:29.598 [JavaFX Application Thread] DEBUG FXGL                 - FXGL started
+17:33:29.599 [JavaFX Application Thread] DEBUG FXGL                 - Initializing FXGL
+17:33:29.646 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/ui/cursors/fxgl_default.png
+17:33:29.693 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/ui/fonts/VarelaRound-Regular.ttf
+17:33:29.906 [JavaFX Application Thread] DEBUG MainWindow           - Creating a JavaFX scene
+17:33:29.955 [JavaFX Application Thread] DEBUG MainWindow           - Target settings size: 800.0 x 600.0
+17:33:29.955 [JavaFX Application Thread] DEBUG MainWindow           - Scaled scene size:    800.0 x 600.0
+17:33:29.955 [JavaFX Application Thread] DEBUG MainWindow           - Scaled ratio: (1.0, 1.0)
+17:33:29.958 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/ui/css/fxgl_dark.css
+17:33:29.962 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/textures/fxgl_icon.png
+17:33:29.982 [JavaFX Application Thread] DEBUG MainWindow           - Opening main window
+17:33:30.254 [JavaFX Application Thread] DEBUG MainWindow           - Window border size: (6.0, 35.0)
+17:33:30.255 [JavaFX Application Thread] DEBUG MainWindow           - Scaled size: 800.0 x 600.0
+17:33:30.255 [JavaFX Application Thread] DEBUG MainWindow           - Scaled ratio: (1.0, 1.0)
+17:33:30.256 [JavaFX Application Thread] DEBUG MainWindow           - Scene size: 800.0 x 600.0
+17:33:30.256 [JavaFX Application Thread] DEBUG MainWindow           - Stage size: 806.0 x 635.0
+17:33:30.301 [ForkJoinPool.commonPool-worker-1] DEBUG FS                   - Loaded DesktopFSService
+17:33:30.301 [ForkJoinPool.commonPool-worker-1] DEBUG FXGL                 - Loading FXGL system data
+17:33:30.311 [ForkJoinPool.commonPool-worker-1] DEBUG DesktopFSService     - Reading from: system\fxgl.bundle
+17:33:30.320 [ForkJoinPool.commonPool-worker-1] DEBUG Bundle               - Logging bundle: FXGL
+17:33:30.322 [ForkJoinPool.commonPool-worker-1] DEBUG Bundle               - FXGL.offline.timer.version.check=2019-01-20T15:39:25.309
+17:33:30.324 [ForkJoinPool.commonPool-worker-1] DEBUG FXGL                 - Initializing state machine and application states
+17:33:30.326 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from disk: /assets/ui/cursors/fxgl_default.png
+17:33:30.331 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from disk: /assets/ui/cursors/fxgl_default.png
+17:33:30.337 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from cache: /assets/ui/fonts/VarelaRound-Regular.ttf
+17:33:30.343 [ForkJoinPool.commonPool-worker-1] DEBUG AssetLoader          - Loading from disk: /assets/ui/cursors/fxgl_default.png
+17:33:30.351 [ForkJoinPool.commonPool-worker-1] DEBUG GameScene            - Game scene initialized: 800x600
+17:33:30.360 [ForkJoinPool.commonPool-worker-1] DEBUG GameWorld            - Game world initialized
+17:33:30.430 [ForkJoinPool.commonPool-worker-1] DEBUG PhysicsWorld         - Physics world initialized: appHeight=600, physics.ppm=50,0
+17:33:30.450 [ForkJoinPool.commonPool-worker-1] DEBUG Input                - Registered new binding: Pause - Esc
+17:33:30.492 [JavaFX Application Thread] DEBUG FXGL                 - Running preInit()
+17:33:30.494 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Screenshot - P
+17:33:30.494 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Dev Options - CTRL+0
+17:33:30.494 [JavaFX Application Thread] DEBUG Input                - Registered new binding: System info dump - CTRL+9
+17:33:30.495 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Restart - CTRL+R
+17:33:30.496 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Left - A
+17:33:30.496 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Right - D
+17:33:30.496 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Down - S
+17:33:30.497 [JavaFX Application Thread] DEBUG Input                - Registered new binding: Up - W
+17:33:30.497 [JavaFX Application Thread] INFO  FXGL                 - FXGL initialization took: 0,899 sec
+17:33:30.498 [JavaFX Application Thread] DEBUG LoopRunner           - Starting loop
+17:33:30.499 [JavaFX Application Thread] DEBUG StartupState         - STARTUP
+17:33:30.499 [JavaFX Application Thread] DEBUG GameApplication      - Starting new game
+17:33:30.499 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+17:33:30.500 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/ui/css/fxgl_dark.css
+17:33:30.507 [JavaFX Application Thread] DEBUG AppStateMachine      - StartupState -> LoadingState
+17:33:30.513 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Clearing previous game
+17:33:30.513 [FXGL Background Thread 1 ] DEBUG GameWorld            - Clearing game world
+17:33:30.514 [FXGL Background Thread 1 ] DEBUG PhysicsWorld         - Clearing physics world
+17:33:30.514 [FXGL Background Thread 1 ] DEBUG GameScene            - Clearing game scene
+17:33:30.515 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Initializing Game
+17:33:30.613 [FXGL Background Thread 1 ] DEBUG GameScene            - Creating render group for layer: DEFAULT(100000)
+17:33:30.618 [FXGL Background Thread 1 ] DEBUG AssetLoader          - Loading from disk: /assets/textures/ball.png
+17:33:30.654 [FXGL Background Thread 1 ] DEBUG AssetLoader          - Loading from disk: /assets/textures/bird.png
+17:33:30.661 [FXGL Background Thread 1 ] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:30.662 [FXGL Background Thread 1 ] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:30.663 [FXGL Background Thread 1 ] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:30.663 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Initializing Physics
+17:33:30.664 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Initializing UI
+17:33:30.664 [FXGL Background Thread 1 ] DEBUG InitAppTask          - Initialization Complete
+17:33:30.664 [FXGL Background Thread 1 ] INFO  InitAppTask          - Game initialization took: 0,150 sec
+17:33:30.670 [JavaFX Application Thread] DEBUG Input                - Clearing active input actions
+17:33:30.670 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from disk: /assets/ui/css/fxgl_dark.css
+17:33:30.677 [JavaFX Application Thread] DEBUG AppStateMachine      - LoadingState -> PlayState
+17:33:32.043 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/ball.png@40.0x40.0
+17:33:32.046 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:32.049 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:32.052 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:32.055 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:36.383 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/ball.png@40.0x40.0
+17:33:36.385 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:36.387 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:36.387 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:36.388 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:37.872 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/ball.png@40.0x40.0
+17:33:37.873 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:37.874 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:37.874 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:37.876 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:39.311 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/ball.png@40.0x40.0
+17:33:39.312 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:39.313 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:39.314 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:39.314 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:40.768 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/ball.png@40.0x40.0
+17:33:40.769 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:40.770 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:40.770 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:40.771 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:45.295 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/ball.png@40.0x40.0
+17:33:45.296 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:45.297 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:45.298 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:45.299 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:47.519 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/ball.png@40.0x40.0
+17:33:47.520 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:47.520 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:47.521 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:47.522 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:53.535 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/ball.png@40.0x40.0
+17:33:53.536 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:53.536 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:53.537 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:33:53.537 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:03.102 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/ball.png@40.0x40.0
+17:34:03.103 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:03.104 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:03.104 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:03.105 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:10.239 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/ball.png@40.0x40.0
+17:34:10.240 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:10.241 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:10.242 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:10.243 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:11.166 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/ball.png@40.0x40.0
+17:34:11.167 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:11.168 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:11.168 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:11.169 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:24.639 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/ball.png@40.0x40.0
+17:34:24.640 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:24.641 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:24.642 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:24.642 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:25.790 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/ball.png@40.0x40.0
+17:34:25.791 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:25.792 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:25.792 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:25.793 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:26.670 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/ball.png@40.0x40.0
+17:34:26.671 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:26.672 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:26.672 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:26.673 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:28.144 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/ball.png@40.0x40.0
+17:34:28.145 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:28.145 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:28.146 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:28.146 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:29.903 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/ball.png@40.0x40.0
+17:34:29.904 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:29.905 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:29.905 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:29.906 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:30.670 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/ball.png@40.0x40.0
+17:34:30.671 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:30.671 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:30.672 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:30.672 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:38.958 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/ball.png@40.0x40.0
+17:34:38.959 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:38.959 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:38.960 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:38.960 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:41.406 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/ball.png@40.0x40.0
+17:34:41.407 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:41.408 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:41.408 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:41.409 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:45.118 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/ball.png@40.0x40.0
+17:34:45.119 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:45.120 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:45.120 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:45.121 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:51.806 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/ball.png@40.0x40.0
+17:34:51.807 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:51.807 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:51.808 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:51.808 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:52.414 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/ball.png@40.0x40.0
+17:34:52.415 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:52.415 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:52.416 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:52.416 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:53.407 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/ball.png@40.0x40.0
+17:34:53.408 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:53.408 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:53.409 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:34:53.409 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:35:00.462 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/ball.png@40.0x40.0
+17:35:00.463 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:35:00.463 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:35:00.463 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:35:00.464 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:35:04.591 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/ball.png@40.0x40.0
+17:35:04.592 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:35:04.592 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:35:04.593 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:35:04.593 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:35:06.190 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/ball.png@40.0x40.0
+17:35:06.191 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:35:06.191 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:35:06.192 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:35:06.192 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:35:06.911 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/ball.png@40.0x40.0
+17:35:06.912 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:35:06.912 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:35:06.912 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:35:06.913 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:35:07.727 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/ball.png@40.0x40.0
+17:35:07.727 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:35:07.728 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:35:07.728 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:35:07.729 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:35:10.174 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/ball.png@40.0x40.0
+17:35:10.174 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:35:10.175 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:35:10.175 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:35:10.176 [JavaFX Application Thread] DEBUG AssetLoader          - Loading from cache: /assets/textures/bird.png
+17:35:12.599 [JavaFX Application Thread] DEBUG FXGL                 - Exiting FXGL
+17:35:12.599 [JavaFX Application Thread] DEBUG FXGL                 - Shutting down background threads
+17:35:12.599 [JavaFX Application Thread] DEBUG FXGL                 - Saving FXGL system data
+17:35:12.602 [JavaFX Application Thread] DEBUG DesktopFSService     - Writing to: system\fxgl.bundle
+17:35:12.607 [JavaFX Application Thread] DEBUG FXGL                 - Closing logger and exiting JavaFX
