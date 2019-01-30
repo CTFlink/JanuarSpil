@@ -3,3 +3,5 @@ Dodger, et spil lavet ud fra en tutorial som 1. semester opg. på Datamatiker li
 
 Spillet handler om at spilleren skal undgå at fuglene bliver ramt af bolden der hele tiden skifter retning.
 Udfordringen er at fuglene bevæger sig forskelligt fra hinanden så det er ikke helt så nemt at styre.
+
+![My image](CTFlink.github.com/JanuarSpil/blob/master/dodger.jpg)
