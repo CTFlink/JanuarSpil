@@ -84,7 +84,9 @@ public class DodgerApp extends GameApplication {
         vars.put("score", 0);
     }
 
-
+    /**
+     * Her ændres generelle settings ved spillet.
+     */
     @Override
     protected void initGame() {
 
@@ -107,6 +109,9 @@ public class DodgerApp extends GameApplication {
         respawnEntities();
     }
 
+    /**
+     *
+     */
     private void respawnEntities(){
 
         Entity bounds = Entities.makeScreenBounds(40);
@@ -126,7 +131,7 @@ public class DodgerApp extends GameApplication {
     }
 
     /**
-     * initPhysics metoden gør os i stand til at ændre på hvordan ting bevæger sig i forhold til hinanden.
+     * initPhysics metoden giver mulighed for at ændre på hvordan ting bevæger sig i forhold til hinanden.
      */
     @Override
     protected void initPhysics() {
